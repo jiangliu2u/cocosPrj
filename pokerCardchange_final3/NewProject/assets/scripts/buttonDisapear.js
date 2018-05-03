@@ -12,31 +12,29 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-        // button: {
-        //     default: null,
-        //     type: cc.Button
-        // },
+        button: {
+            default: null,
+            type: cc.Button
+        },
     },
-
-    btnDisappear: function () {
+    onLoad: function () {
         //this.clickTimeArray = new Array();
 
 
         var self = this;
-        cc.log(self.node);
-        this.on(cc.Node.EventType.TOUCH_START, this.nodeDoubleClickCallBack, this);
+
+        this.node.on(cc.Node.EventType.TOUCH_START, this.nodeDoubleClickCallBack, this);
         // this.pokerNode.on(cc.Node.EventType.TOUCH_MOVE, this.moveCallback, this);
 
 
     },
-
 
  
     
     nodeDoubleClickCallBack: function(event){
 
 
-        this.node.active = !this.node.active; 
+        this.button.node.active = !this.button.node.active; 
     },
     // LIFE-CYCLE CALLBACKS:
 

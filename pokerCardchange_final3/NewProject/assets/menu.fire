@@ -29,13 +29,10 @@
         "__id__": 20
       },
       {
-        "__id__": 24
+        "__id__": 9
       },
       {
         "__id__": 7
-      },
-      {
-        "__id__": 9
       }
     ],
     "_tag": -1,
@@ -159,7 +156,7 @@
     "monPrefab": {
       "__uuid__": "8b9b19eb-c617-4336-987a-4d1028ac1bfc"
     },
-    "button": {
+    "disappearBtn": {
       "__id__": 8
     },
     "point": 0,
@@ -348,7 +345,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "9",
+    "_name": "disapearStartBtn",
     "_objFlags": 0,
     "_parent": {
       "__id__": 1
@@ -365,7 +362,7 @@
       }
     ],
     "_prefab": null,
-    "_id": "28zqRbdBBAt7a/fUzy+XUp",
+    "_id": "fdwnIymgBGQqHmYsLWcF0/",
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
@@ -377,13 +374,13 @@
     "_cascadeOpacityEnabled": true,
     "_anchorPoint": {
       "__type__": "cc.Vec2",
-      "x": 0.5638365783593998,
-      "y": 0.4305210918114144
+      "x": 0.5643704746857712,
+      "y": 0.44888768959727743
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 241,
-      "height": 310
+      "width": 126,
+      "height": 157
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -391,8 +388,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 734,
-      "y": 274
+      "x": 487,
+      "y": 155
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -410,10 +407,10 @@
     },
     "_enabled": true,
     "_spriteFrame": {
-      "__uuid__": "0e6f5996-dfa6-431b-b5d5-42d8e575a8f6"
+      "__uuid__": "e8b205b3-105a-46df-b4b4-d4ca30eea0c5"
     },
     "_type": 0,
-    "_sizeMode": 1,
+    "_sizeMode": 0,
     "_fillType": 0,
     "_fillCenter": {
       "__type__": "cc.Vec2",
@@ -422,7 +419,7 @@
     },
     "_fillStart": 0,
     "_fillRange": 0,
-    "_isTrimmedMode": false,
+    "_isTrimmedMode": true,
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_atlas": null
@@ -432,8 +429,8 @@
     "target": {
       "__id__": 2
     },
-    "component": "buttonDisappear",
-    "handler": "btnDisappear",
+    "component": "menu",
+    "handler": "creatPokerCard",
     "customEventData": ""
   },
   {
@@ -472,8 +469,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 157,
-      "height": 282
+      "width": 105,
+      "height": 178
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -481,8 +478,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 112,
-      "y": 484
+      "x": 59,
+      "y": 549
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -503,7 +500,7 @@
       "__uuid__": "4f898aca-6664-4999-a535-cb91c114ccbe"
     },
     "_type": 0,
-    "_sizeMode": 1,
+    "_sizeMode": 0,
     "_fillType": 0,
     "_fillCenter": {
       "__type__": "cc.Vec2",
@@ -627,8 +624,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 315,
-      "y": 378
+      "x": 197,
+      "y": 363
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -774,7 +771,7 @@
     "_position": {
       "__type__": "cc.Vec2",
       "x": 869,
-      "y": 517
+      "y": 453
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -872,164 +869,6 @@
     },
     "component": "menu",
     "handler": "spawnNewMon",
-    "customEventData": ""
-  },
-  {
-    "__type__": "cc.Node",
-    "_name": "disapearBtn",
-    "_objFlags": 0,
-    "_parent": {
-      "__id__": 1
-    },
-    "_children": [],
-    "_tag": -1,
-    "_active": true,
-    "_components": [
-      {
-        "__id__": 25
-      },
-      {
-        "__id__": 26
-      }
-    ],
-    "_prefab": null,
-    "_id": "fdwnIymgBGQqHmYsLWcF0/",
-    "_opacity": 255,
-    "_color": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 255
-    },
-    "_cascadeOpacityEnabled": true,
-    "_anchorPoint": {
-      "__type__": "cc.Vec2",
-      "x": 0.5643704746857712,
-      "y": 0.44888768959727743
-    },
-    "_contentSize": {
-      "__type__": "cc.Size",
-      "width": 126,
-      "height": 157
-    },
-    "_rotationX": 0,
-    "_rotationY": 0,
-    "_scaleX": 1,
-    "_scaleY": 1,
-    "_position": {
-      "__type__": "cc.Vec2",
-      "x": 475,
-      "y": 370
-    },
-    "_skewX": 0,
-    "_skewY": 0,
-    "_localZOrder": 0,
-    "_globalZOrder": 0,
-    "_opacityModifyRGB": false,
-    "groupIndex": 0
-  },
-  {
-    "__type__": "cc.Sprite",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 24
-    },
-    "_enabled": true,
-    "_spriteFrame": {
-      "__uuid__": "e8b205b3-105a-46df-b4b4-d4ca30eea0c5"
-    },
-    "_type": 0,
-    "_sizeMode": 0,
-    "_fillType": 0,
-    "_fillCenter": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
-    },
-    "_fillStart": 0,
-    "_fillRange": 0,
-    "_isTrimmedMode": true,
-    "_srcBlendFactor": 770,
-    "_dstBlendFactor": 771,
-    "_atlas": null
-  },
-  {
-    "__type__": "cc.Button",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 24
-    },
-    "_enabled": true,
-    "transition": 0,
-    "pressedColor": {
-      "__type__": "cc.Color",
-      "r": 211,
-      "g": 211,
-      "b": 211,
-      "a": 255
-    },
-    "hoverColor": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 255
-    },
-    "duration": 0.1,
-    "zoomScale": 1.2,
-    "clickEvents": [
-      {
-        "__id__": 27
-      },
-      {
-        "__id__": 28
-      }
-    ],
-    "_N$interactable": true,
-    "_N$enableAutoGrayEffect": false,
-    "_N$normalColor": {
-      "__type__": "cc.Color",
-      "r": 214,
-      "g": 214,
-      "b": 214,
-      "a": 255
-    },
-    "_N$disabledColor": {
-      "__type__": "cc.Color",
-      "r": 124,
-      "g": 124,
-      "b": 124,
-      "a": 255
-    },
-    "_N$normalSprite": null,
-    "_N$pressedSprite": null,
-    "pressedSprite": null,
-    "_N$hoverSprite": null,
-    "hoverSprite": null,
-    "_N$disabledSprite": null,
-    "_N$target": {
-      "__id__": 24
-    }
-  },
-  {
-    "__type__": "cc.ClickEvent",
-    "target": {
-      "__id__": 2
-    },
-    "component": "menu",
-    "handler": "creatPokerCard",
-    "customEventData": ""
-  },
-  {
-    "__type__": "cc.ClickEvent",
-    "target": {
-      "__id__": 2
-    },
-    "component": "buttonDisappear",
-    "handler": "nodeDoubleClickCallBack",
     "customEventData": ""
   }
 ]
